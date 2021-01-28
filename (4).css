@@ -106,6 +106,7 @@ p{
 .box4 .img1 {
     display: inline;
     float: left;
+    vertical-align: middle;
 }
 .box4 .ul1 {
     display: inline-block;
