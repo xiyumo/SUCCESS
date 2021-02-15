@@ -1,0 +1,268 @@
+body {
+    max-width: 540px;
+    min-width: 320px;
+    margin: 0 auto;
+    font: normal 14px/1.5 Tahoma, "Lucida Grande",Verdana,"Microsoft Yahei",STXihei,hei;
+    color: #000;
+    background: #fafafc;
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
+}
+a {
+    text-decoration: none;
+    color: #222;
+}
+div {
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.search-index {
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 540px;
+    min-width: 320px;
+    height: 44px;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.search {
+    flex: 1;
+    height: 26px;
+    line-height: 24px;
+    border: 1px solid #ccc; 
+    margin: 7px 10px;
+    font-size: 12px;
+    color: #666;
+    border-radius: 13px;
+    padding-left: 30px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.2);
+}
+.search::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    width: 16px;
+    height: 16px;
+    background: url(./image12/image1204.png) no-repeat;
+    background-size: 16px 16px;
+}
+.user {
+    width: 44px;
+    height: 44px;
+    font-size: 12px;
+    text-align: center;
+    color: #000;
+}
+.user::before {
+    content: " ";
+    display: block;
+    width: 44px;
+    height: 22px;
+    background: url(./image12/image1203.png) no-repeat;
+    background-size: 22px 22px;
+    margin: 5px 11px -2px;
+}
+.focus img {
+    position: relative;
+    width: 100%;
+}
+.local-nav {
+    display: flex;
+    position: relative;
+    height: 64px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,.08);
+    justify-content: space-around;
+    margin: -52px 12px 10px;
+    padding-bottom: 10px;
+}
+.local-nav a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+}
+.local-nav li [class^="local-nav-icon"] {
+    width: 40px;
+    height: 40px;
+    margin-top: 8px;
+    background: url(./image12/image1205.png) no-repeat 0 0;
+    background-size: 39px auto;
+}
+.local-nav li .local-nav-icon-icon2 {
+    background-position: 0 -40px;
+}
+.local-nav li .local-nav-icon-icon3 {
+    background-position: 0 -80px;
+}
+.local-nav li .local-nav-icon-icon4 {
+    background-position: 0 -120px;
+}
+.local-nav li .local-nav-icon-icon5 {
+    background-position: 0 -160px;
+}
+nav {
+    overflow: hidden;
+    border-radius: 8px;
+    margin: 0 4px 3px;
+}
+.nav-common {
+    display: flex;
+    height: 65.19px;
+}
+.nav-common:nth-child(2) {
+    margin: 3px 0;
+}
+.nav-items {
+    border-right: 1px solid #fff;
+    font-size: 14px;
+    color: #fff;
+    box-shadow: 1px 1px rgba(0,0,0,.2);
+}
+.nav-common:nth-child(1) {
+    background: -webkit-linear-gradient(left,#FA5A55,#FA994D);
+}
+.nav-common:nth-child(2) {
+    background: -webkit-linear-gradient(left,#4B90ED,#53BCED);
+}
+.nav-common:nth-child(3) {
+    background: -webkit-linear-gradient(left,#34C2A9,#6CB559);
+}
+.nav-common .nav-items:last-child {
+    border-right: none;
+}
+.nav-common .nav-items:nth-child(1) {
+    width: 31%;
+    line-height: 65.19px;
+    padding-left: 12px;
+}
+.nav-common .nav-items:nth-child(n+2) {
+    width: 23%;
+    line-height: 65.19px;
+    text-align: center;
+}
+.nav-common:nth-child(1) .nav-items:nth-child(3) {
+    width: 46%;
+}
+.nav-common:nth-child(1) .nav-items:nth-child(1) {
+    background: url(./image12/image1206.png) no-repeat bottom right;
+    background-size: 73px auto;
+}
+.nav-common:nth-child(1) .nav-items:nth-child(2) {
+    background: url(./image12/image1212.png) no-repeat bottom left;
+    background-size: 37px auto;
+}
+.nav-common:nth-child(1) .nav-items:nth-child(3) {
+    background: url(./image12/image1207.png) no-repeat bottom right;
+    background-size: 100% auto;
+}
+.nav-common:nth-child(2) .nav-items:nth-child(1) {
+    background: url(./image12/image1208.png) no-repeat bottom right;
+    background-size: 79px auto;
+}
+.nav-common:nth-child(2) .nav-items:nth-child(2) {
+    background: url(./image12/image1209.png) no-repeat bottom left;
+    background-size: 37px auto;
+}
+.nav-common:nth-child(3) .nav-items:nth-child(1) {
+    background: url(./image12/image1210.png) no-repeat bottom right;
+    background-size: 94px auto;
+}
+.nav-common:nth-child(3) .nav-items:nth-child(2) {
+    background: url(./image12/image1211.png) no-repeat bottom left;
+    background-size: 61px auto;
+}
+.subnav-entry {
+    display: flex;
+    border-radius: 8px;
+    background-color: #fff;
+    margin: 0 4px;
+    flex-wrap: wrap;
+}
+.subnav-entry li {
+    flex: 20%;
+}
+.subnav-entry a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: .63rem;
+    color: #222;
+}
+.subnav-entry [class^="subnav-entry-icon"] {
+    width: 28px;
+    height: 28px;
+    margin-top: 4px;
+    background: url(./image12/image1213.png) no-repeat;
+    background-size: 28px auto;
+}
+.subnav-entry .subnav-entry-icon-icon2 {
+    background-position: 0 -28px;
+}
+.subnav-entry .subnav-entry-icon-icon3 {
+    background-position: 0 -56px;
+}
+.subnav-entry .subnav-entry-icon-icon4 {
+    background-position: 0 -84px;
+}
+.subnav-entry .subnav-entry-icon-icon5 {
+    background-position: 0 -112px;
+}
+.subnav-entry .subnav-entry-icon-icon6 {
+    background-position: 0 -140px;
+}
+.subnav-entry .subnav-entry-icon-icon7 {
+    background-position: 0 -168px;
+}
+.subnav-entry .subnav-entry-icon-icon8 {
+    background-position: 0 -196px;
+}
+.subnav-entry .subnav-entry-icon-icon9 {
+    background-position: 0 -224px;
+}
+.subnav-entry .subnav-entry-icon-icon10 {
+    background-position: 0 -252px;
+}
+.tool {
+    display: flex;
+    height: 60px;
+    margin: 10px auto;
+    border-top: 1px solid #ccc; 
+    border-bottom: 1px solid #ccc; 
+}
+.tool li {
+    flex: 1;
+}
+.tool a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    color: #333;
+    font-size: 12px;
+}
+.tool li a [class^="tool-icon"] {
+    width: 20px;
+    height: 20px;
+    background: url(./image12/image1214.png) no-repeat -58px -152px;
+    background-size: 104px 326px;
+}
+.tool li a .tool-icon2 {
+    background-position: -58px -172px;
+}
+.tool li a .tool-icon3 {
+    background-position: -58px -308px;
+}

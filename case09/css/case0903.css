@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?dr40e6');
+    src:  url('../fonts/icomoon.eot?dr40e6#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?dr40e6') format('truetype'),
+      url('../fonts/icomoon.woff?dr40e6') format('woff'),
+      url('../fonts/icomoon.svg?dr40e6#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+header {
+    height: 80px;
+    border-bottom: 2px solid #c81523;
+}
+.logo {
+    padding-top: 15px;
+}
+.registerarrea {
+    height: 522px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+}
+.registerarrea h3 {
+    height: 40px;
+    border-bottom: 1px solid #ccc;
+    background-color: #ececec;
+    line-height: 40px;
+    padding: 0 10px;
+    font-size: 18px;
+    font-weight: 400;
+}
+.login {
+    float: right;
+    font-size: 14px;
+}
+.login a {
+    color: #c81523;
+}
+.reg_form {
+    width: 600px;
+    margin: 50px auto 0;
+}
+.reg_form ul li {
+    margin-bottom: 20px;
+}
+.reg_form ul li label {
+    display: inline-block;
+    width: 88px;
+    text-align: right;
+}
+.reg_form ul li:nth-child(-n+5) input{
+    width: 242px;
+    height: 37px;
+    border: 1px solid #ccc;
+}
+.reg_form ul li .error {
+    color: #c81523;
+}
+.error::before {
+    content: "\ea0d";
+    font-family: 'icomoon';
+}
+.success {
+    color: rgb(41, 233, 41);
+}
+.success::before {
+    content: "\e902";
+    font-family: 'icomoon';
+}
+.safe {
+    padding-left: 166px;
+}
+.safe em {
+    padding: 0 12px;
+    color: white;
+}
+.ruo {
+    background-color: #de1111;
+}
+.zhong {
+    background-color: #40b83f;
+}
+.qiang {
+    background-color: #f79100;
+}
+.agree {
+    padding-left: 100px;
+}
+.agree input{
+    vertical-align: middle;
+}
+.agree a {
+    color: #1ba1e6;
+}
+.btn {
+    width: 200px;
+    height: 34px;
+    background-color: #c81623;
+    font-size: 14px;
+    color: #fff;
+    margin: 30px 0 0 100px;
+}
+.footer {
+    height: 140px;
+}
+.mod_copyright {
+    text-align: center;
+    padding-top: 20px;
+}
+.links {
+    margin-bottom: 15px;
+}
+.copyright {
+    line-height: 20px;
+}

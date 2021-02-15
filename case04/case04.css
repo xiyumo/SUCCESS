@@ -1,0 +1,33 @@
+a {
+    text-decoration: none;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    color: white;
+    display: inline-block;
+    text-align: center;
+}
+.a1 {
+    background-color: red;
+}
+.a1:hover {
+    background-color: rgb(240, 174, 52);
+}
+.a2 {
+    background-color: rgba(42, 200, 228, 0.842);
+}
+.a2:hover {
+    background-color: rgb(52, 240, 152);
+}
+.a3 {
+    background-color: rgb(194, 14, 230);
+}
+.a3:hover {
+    background-color: rgba(180, 52, 240, 0.514);
+}
+.a4 {
+    background-color: rgb(255, 0, 170);
+}
+.a4:hover {
+    background-color: rgb(52, 240, 152);
+}

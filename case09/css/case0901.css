@@ -1,0 +1,247 @@
+ /* 申明字体图标 注意路径的变化*/
+ @font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?dr40e6');
+    src:  url('../fonts/icomoon.eot?dr40e6#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?dr40e6') format('truetype'),
+      url('../fonts/icomoon.woff?dr40e6') format('woff'),
+      url('../fonts/icomoon.svg?dr40e6#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+.main {
+    width: 980px;
+    height: 455px;
+    margin-left: 220px;
+    margin-top: 10px;
+}
+.focus {
+    float: left;
+    width: 721px;
+    height: 455px;
+}
+.newsflash {
+    float: right;
+    width: 250px;
+    height: 455px;
+}
+.news {
+    height: 165px;
+}
+.news-hd {
+    height: 33px;
+    line-height: 33px;
+    border-bottom: 1px dotted #e4e4e4;
+    padding: 0 15px;
+} 
+.news-hd h5 {
+    float: left;
+    font-size: 14px;
+}
+.news-hd .more {
+    float: right;
+}
+.news-hd .more::after {
+    font-family: 'icomoon';
+    content: '\e901';
+}
+.news-bd {
+    padding: 5px 15px 0;
+}
+.news-bd ul li {
+    height: 24px;
+    line-height: 24px;
+    /* 文字超出部分用省略号 */
+    overflow: hidden;
+    word-spacing: nowrap;
+    text-overflow: ellipsis;
+}
+.lifeservice {
+    height: 209px;
+    border: 1px solid #e4e4e4;
+    border-top: 0;
+    overflow: hidden;
+}
+.lifeservice ul {
+    width: 252px;
+    text-align: center;
+}
+.lifeservice ul li {
+    position: relative;
+    float: left;
+    width: 63px;
+    height: 71px;
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+}
+.lifeservice ul li em {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgb(104,156,82);
+    font-size: 10px;
+    color: #fff;
+}
+.lifeservice ul li i {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+.lifeservice ul li a {
+    display: block;
+}
+.lifeservice ul li .i1 {
+    background: url(../image09/image0911.png) no-repeat;
+}
+.lifeservice ul li .i2 {
+    background: url(../image09/image0912.png) no-repeat;
+}
+.lifeservice ul li .i3 {
+    background: url(../image09/image0913.png) no-repeat;
+}
+.lifeservice ul li .i4 {
+    background: url(../image09/image0914.png) no-repeat;
+}
+.lifeservice ul li .i5 {
+    background: url(../image09/image0915.png) no-repeat;
+}
+.lifeservice ul li .i6 {
+    background: url(../image09/image0916.png) no-repeat;
+}
+.lifeservice ul li .i7 {
+    background: url(../image09/image0917.png) no-repeat;
+}
+.lifeservice ul li .i8 {
+    background: url(../image09/image0918.png) no-repeat;
+}
+.lifeservice ul li .i9 {
+    background: url(../image09/image0919.png) no-repeat;
+}
+.lifeservice ul li .i10 {
+    background: url(../image09/image0920.png) no-repeat;
+}
+.lifeservice ul li .i11 {
+    background: url(../image09/image0921.png) no-repeat;
+}
+.lifeservice ul li .i12 {
+    background: url(../image09/image0922.png) no-repeat;
+}
+.bargin {
+    margin-top: 5px;
+}
+.recom {
+    height: 163px;
+    margin-top: 12px;
+}
+.recom_hd {
+    float: left;
+}
+.recom_bd {
+    float: left;
+}
+.recom_bd ul li {
+    position: relative;
+    float: left;
+}
+.recom_bd ul li img {
+    width: 248px;
+    height: 143px;
+}
+.recom_bd ul li:nth-child(-n+3)::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 1px;
+    height: 125px;
+    background-color: #ddd;
+}
+.guess {
+    height: 300px;
+}
+.guess .guess_like {
+    height: 70px;
+}
+.guess .guess_like h2 {
+    display: inline-block;
+    float: left;
+    line-height: 70px;
+}
+.guess .guess_like a {
+    float: right;
+    line-height: 70px;
+}
+.guess .guess_like a::after {
+    font-family: 'icomoon';
+    content: '\e984';
+    margin-left: 3px;
+}
+.guess .dsy {
+    height: 232px;
+}
+.guess .dsy ul li {
+    float: left;
+    width: 199px;
+    height: 232px;
+}
+.box_hd {
+    height: 30px;
+    border-bottom: 2px solid #c81623;
+}
+.box_hd h3 {
+    float: left;
+    font-size: 18px;
+    color: #c81623;
+}
+.tab_list {
+    float: right;
+    line-height: 30px;
+}
+.tab_list ul li {
+    float: left;
+}
+.tab_list ul li a {
+    margin: 0 15px;
+}
+.floor .w {
+    margin-top: 30px;
+}
+.box_bd {
+    height: 361px;
+}
+.tab_list_item>div {
+    float: left;
+    height: 361px;
+}
+.col_210 {
+    width: 210px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+.col_210 ul {
+    padding-left: 12px;
+}
+.col_210 ul li {
+    float: left;
+    width: 85px;
+    height: 34px;
+    border-bottom: 1px solid #ccc;
+    line-height: 34px;
+    text-align: center;
+    margin-right: 10px;
+}
+.col_329 {
+    width: 329px;
+}
+.col_221 {
+    width: 221px;
+    border-right: 1px solid #ccc;
+}
+.col_219 {
+    width: 219px;
+}
+.bb {
+    display: block;
+    border-bottom: 1px solid #ccc;
+}
