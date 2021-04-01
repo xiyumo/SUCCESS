@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        textarea {
+            width: 400px;
+            height: 150px;
+            outline: none;
+        }
+        button {
+            width: 100px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <textarea></textarea>
+    <button>点击发送</button>
+    <div class="box"></div>
+</body>
+<script>
+    let btn=document.querySelector("button");
+    let tet=document.querySelector("textarea");
+    let box=document.querySelector(".box");
+    btn.addEventListener('click',()=>{
+        let div=document.createElement("div");
+        div.style.height="50px";
+        div.style.lineHeight="50px";
+        box.insertBefore(div,box.firstChild);
+        div.innerText=tet.value;
+        tet.value="";
+    })
+</script>
+</html>

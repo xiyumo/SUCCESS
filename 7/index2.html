@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>历史，总是在一些特殊的时刻，给人以深刻的启迪。</p>
+    <p>1949年3月23日上午，毛泽东主席率领中央机关离开西柏坡，向北平进发，临行前的话意味深长：“今天是进京赶考的日子”。</p>
+    <p>2013年7月，党的十八大后第一次党内集中教育——党的群众路线教育实践活动开展之时，习近平总书记来到西柏坡。纪念馆内，总书记久久凝思：“党面临的‘赶考’远未结束。”</p>
+    <p>历史照亮未来，征程未有穷期。</p>
+    <p>中国共产党即将迎来百年华诞之际，又一场党内集中教育——党史学习教育在全党如火如荼展开。</p>
+    <p>党的十八大以来，习近平总书记的足迹遍及革命老区和革命圣地，重温红色记忆、讲述感人故事、阐释党史启迪，为全党学史明理、学史增信、学史崇德、学史力行树立了光辉典范。</p>
+    <button class="btn1">更改主体颜色</button><br/><br/>
+    <button class="btn2">字体增大</button>
+    <button class="btn3">字体恢复默认</button>
+    <button class="btn4">字体减小</button>
+    <script>
+        let flag1=1,flag2=1,flag4=1;
+        let btn1=document.querySelector('.btn1');
+        let btn2=document.querySelector('.btn2');
+        let btn3=document.querySelector('.btn3');
+        let btn4=document.querySelector('.btn4');
+        let body=document.querySelector('body');
+        btn1.addEventListener('click',()=>
+        {
+            if(flag1)
+            {
+                body.style.backgroundColor="skyblue";
+                flag1=0;
+            }else{
+                body.style.backgroundColor="white";
+                flag1=1;
+            }
+        })
+        btn2.addEventListener('click',()=>
+        {
+            if(flag2)
+            {
+                body.style.fontSize="20px";
+                flag2=0;
+            }
+        })
+        btn3.addEventListener('click',()=>
+        {
+            if((flag2==0)||(flag4==0))
+            {
+                body.style.fontSize="14px";
+                flag2=1,flag4=1;
+            }
+        })
+        btn4.addEventListener('click',()=>
+        {
+            if(flag4)
+            {
+                body.style.fontSize="10px";
+                flag4=0;
+            }
+        })
+    </script>
+</body>
+</html>
