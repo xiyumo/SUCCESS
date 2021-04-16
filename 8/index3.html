@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Student(name) { 
+            console.log(new Date);
+
+            function People(name) {
+                console.log(new Date,"Hi This is "+name);
+            }
+
+            People.prototype.sleep = function(time) {
+                People.prototype.count1=time;
+                setTimeout(function(){
+                    console.log(new Date,"Wake up after "+time);     
+                },time*1000);
+                return this;
+            };
+
+            People.prototype.sleepFirst = function(time) {
+                People.prototype.count2=time; 
+                setTimeout(function(){
+                    console.log(new Date,"Wake up after "+time);
+
+                    People(name);
+                    
+                },time*1000);
+                return this;
+            }
+
+            People.prototype.study = function(course) {
+                let reg=/\d+/g;
+                if(reg.test(this.count1)) {
+                    setTimeout(function () {
+                        console.log(new Date,"Study "+course);
+                    },this.count1*1000);
+                }
+                if(reg.test(this.count2)) {
+                    setTimeout(function () {
+                        console.log(new Date,"Study "+course);
+                    },this.count2*1000);
+                }
+                if(this.count1==undefined && this.count2==undefined) {
+                    console.log(new Date,"Study "+course);
+                }
+                return this;
+            }
+
+            return new People(name);    
+        }
+
+        //Student('fxy');
+        //Student('fxy').sleep(3).study('javascript');
+        //Student('fxy').study('javascript').study('Vue');
+        Student('fxy').sleepFirst(5).study('Ajax');
+    </script>
+</body>
+</html>

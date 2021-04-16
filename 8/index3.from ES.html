@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    function Student(name) {
+      function People(name) {
+        this.todoList = [];  //创建一个用于存放任务执行顺序的数组
+        let fn = () => {
+          console.log(`my name is ${name}`)+
+          this.next(); //执行下一个任务
+        }
+
+        this.todoList.push(fn);
+
+        setTimeout(() => {
+          this.next(); 
+        }, 0);
+
+        return this;
+      }
+
+      People.prototype.sleep = function (time) {
+        let fn = () => {
+          setTimeout(() => {
+            console.log(`sleep ${time} 秒`);
+            this.next();
+          }, time * 1000)
+        }
+        this.todoList.push(fn);  //放进任务执行顺序数组的最后一项
+        return this;
+      }
+
+      People.prototype.sleepFirst = function (time) {
+        let fn =()=>{
+          setTimeout(()=>{
+            console.log(`fisrst sleep ${time}`);
+            this.next()
+          },time*1000)
+        }
+        this.todoList.unshift(fn);  //放进任务执行顺序数组的第一项
+        return this
+      }
+
+      People.prototype.study = function (course) {
+        let fn = () =>{
+          setTimeout(()=>{
+            console.log(`study ${course}`);
+            this.next();
+          })
+        }
+
+        this.todoList.push(fn); //放进任务执行顺序数组的最后一项
+        return this;
+      }
+
+      //用于执行下一个任务的next函数
+      People.prototype.next = function () {
+        let currentFn = this.todoList.shift();
+        if (typeof currentFn === "function") currentFn();
+      }
+
+      return new People(name);
+    }
+
+    // Student("tyh").sleep(2).study("vue");
+    Student("tyh").sleepFirst(2).study("vue");
+  </script>
+</body>
+
+</html>
